@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<!--above line makes game playable in IE 9-->
+<html>
+	<head>
+		<title>cWynn Ants</title>
+		<meta name="description" content="Play Hamster Flight" />
+		<meta name="keywords" content="html5, html 5, javascript, game, hamster, jetpack, Charlie, Wynn" />
+		<meta name="author" content="Charlie Wynn" />
+
+		<script type="text/javascript" src="vector.js"></script>
+		<script type="text/javascript" src="globals.js"></script>
+		<script type="text/javascript" src="ant.js"></script>
+		<script type="text/javascript" src="anthillcomponents.js"></script>
+		<script type="text/javascript" src="drawing.js"></script>
+		<script type="text/javascript" src="gamemechanics.js"></script>
+		
+		<style type="text/css">
+		html, body {
+		  width:  100%;
+		  height: 100%;
+		  margin: 0px;
+		}
+		</style>
+	</head>
+	
+	<!-- didload is in gameMechanics.js and init's the variables for the game and the canvas -->
+	<body onLoad="didload()">
+		<div id="canvas"></div><br>
+		I was bored one day and wanted to explore making an ant hill simulation.<br>
+		I came up with this in about 4 hours.<br><br>
+		There are plenty of bugs, but for now I'm happy with it<br>
+		The end goal was to have something interesting to watch as the ants built a colony<br><br>
+		
+		What I would add if I had more time to mess with it:<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;Tunnels that loop back to eachother (right now it's just a tree)<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;Support tunnels making it back to surface (right now there's just one entry point and no tunnels can go back up certain elevation)<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;Add rooms that would have to be built after so much distance from the nearest room/surface point
+		&nbsp;&nbsp;&nbsp;&nbsp;Support more than the 8 secondary directions
+    <br><br>
+    I've made a 2nd version, with many of the same bugs, but better engine <a href="./v2">here</a>
+	</body>
+</html>
